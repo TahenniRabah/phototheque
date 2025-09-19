@@ -1,0 +1,39 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environnements
+.env
+.env.local
+.env.*.local
+
+# Build / output
+dist/
+build/
+.out/
+.next/
+.vercel/
+
+# Tailwind
+*.css.map
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Optional lock files (si tu veux en garder qu’un seul)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

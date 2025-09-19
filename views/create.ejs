@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <%- include('partials/head') %>
+  </head>
+  <body class="min-h-screen">
+    <%- include('partials/nav') %>
+    <div class="px-10 py-6">
+      <h1 class="text-3xl font-bold mb-3">Nouvel album</h1>
+      <form class="flex flex-col mb-4" method="post">
+        <label class="mb-1" for="titre" name="titre">Titre</label>
+        <input
+          class="border p-2 mb-4"
+          type="text"
+          name="titre"
+          id="titre"
+          placeholder="Titre de votre nouvel album"
+        />
+        <% if (error.length){ %>
+          <div class="mb-2 border bg-red-600 text-white p-3">
+            <p ><%= error %></p>
+          </div>
+        <% } %>
+        <button
+          type="submit"
+          href="/albums/create"
+          class="rounded border text-white bg-blue-600 px-2 py-1  w-14"
+        >
+          Créer
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
